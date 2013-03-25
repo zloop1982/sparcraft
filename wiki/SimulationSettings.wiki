@@ -1,10 +1,70 @@
 #summary Description and syntax for simulation settings file
 
-= Simulation Settings =
+SparCraft can easily be used to run combat simulations without editing a single line of code! The SearchExperiment class parses and runs experiments which are specified in a settings file, which will be explained here.
+
+= Players =
+
+To run a simulation you'll first need players. Players are specific in the settings file with the following syntax:
+
+{{{
+Player X [PARAMS]
+}}}
+
+Since this is a 2-player simulation only, X must be a 0 or a 1, specifying which player the Player object will be assigned to. PARAMS is a list of parameters which is specific to the type of player being added. Each class in SparCraft which has prefix `Player_` is a `Player` sub-class which can be specified in the experiment settings file. Here are some examples of player settings:
+
+{{{
+Player 0 AlphaBeta 40 20 ScriptFirst Playout NOKDPS NOKDPS Alternate None
+Player 0 UCT 40 1.6 5000 20 ScriptFirst Playout NOKDPS NOKDPS Alternate None
+Player 1 PortfolioGreedySearch NOKDPS 1 0
+Player 1 NOKDPS
+Player 1 AttackClosest
+}}} 
+
+Exact syntax for each type of player is as follows:
+
+{{{
+#  ,---------------------------------------------------------,
+#  | Scripted Player Syntax                                  |
+#  |---------------------------------------------------------|
+#  | Player X ScriptName                                     |
+#  '---------------------------------------------------------'
+#
+#  ,----------------------------------------------------------,
+#  | Portfolio Greedy Search Player Syntax                    |
+#  |----------------------------------------------------------|
+#  | Player X PortfolioGreedySearch Seed Iterations Responses |
+#  '----------------------------------------------------------'
+#
+#  ,---------------------------------------------------------------------------------------------------------------------------------------------,
+#  | AlphaBeta Player Syntax + Options                                        (Scripts for Playouts)                                             |
+#  |---------------------------------------------------------------------------------------------------------------------------------------------|
+#  | Player X AlphaBeta  TimeLimitMS   MaxChildren  MoveOrdering  EvalMethod  P0Script     P1Script     PlayerToMoveMethod   OpponentModelScript |
+#  |---------------------------------------------------------------------------------------------------------------------------------------------|
+#  |                     Integer       Integer      ScriptFirst   Playout     ScriptName   ScriptName   Alternate            ScriptName          |
+#  |                                   0 = NoMax    None          LTD                                   NotAlternate         None                |
+#  |                                                              LTD2                                  Random                                   |
+#  '---------------------------------------------------------------------------------------------------------------------------------------------'
+#
+#  ,--------------------------------------------------------------------------------------------------------------------------------------------------------------,
+#  | UCT Player Syntax + Options                                                        (Scripts for Playouts)                                                    |
+#  |--------------------------------------------------------------------------------------------------------------------------------------------------------------|
+#  | Player X UCT  TimeLimitMS  CValue  MaxTraversals  MaxChildren  MoveOrdering  EvalMethod   P0Script     P1Script     PlayerToMoveMethod   OpponentModelScript |
+#  |--------------------------------------------------------------------------------------------------------------------------------------------------------------|
+#  |               Integer      Double  Integer        Integer      ScriptFirst   Playout      ScriptName   ScriptName   Alternate            ScriptName          |
+#  |                                                                None          LTD                                    NotAlternate         None                |
+#  |                                                                              LTD2                                   Random                                   |
+#  '--------------------------------------------------------------------------------------------------------------------------------------------------------------'
+#
+}}}
+
+If you are not familiar with what the search player settings mean, then you should probably use the examples I listed above, as they are good settings that we have found through experimentation.
+
+= State Specification =
+
+To run a simulation you need to specify at least one initial game state
 
 
-
-= Details =
+= Player Type Specification=
 
 Add your content here.  Format your content with:
   * Text in *bold* or _italic_
