@@ -1,16 +1,18 @@
 #summary Description and syntax for simulation settings file
 
-SparCraft can easily be used to run combat simulations without editing a single line of code! The SearchExperiment class parses and runs experiments which are specified in a settings file, which will be explained here.
+SparCraft can easily be used to run combat simulations without editing a single line of code! The SearchExperiment class parses and runs experiments which are specified in a settings file, which will be explained here. Settings must be entered one per line, with blank lines and lines starting with a `#` (comments) being ignored.
 
 = Players =
 
-To run a simulation you'll first need players. Players are specific in the settings file with the following syntax:
+To run a simulation you'll first need players. The `Player` class in SparCraft is an abstract class which has many `Player_Type` sub-classes. These sub-classes contain the logic which generates `UnitAction`s from a given state. Essentially, `Player`s define the behaviour that your units will follow. For example, the `Player_AttackClosest` class will generate moves in which units attack the closest enemy unit to them.
+
+Players are specified in the settings file with the following syntax:
 
 {{{
-Player X [PARAMS]
+Player PLAYER_ID PLAYER_TYPE [PARAMS]
 }}}
 
-Since this is a 2-player simulation only, X must be a 0 or a 1, specifying which player the Player object will be assigned to. PARAMS is a list of parameters which is specific to the type of player being added. Each class in SparCraft which has prefix `Player_` is a `Player` sub-class which can be specified in the experiment settings file. Here are some examples of player settings:
+Since this is a 2-player simulation only, PLAYER_ID must be a 0 or a 1, specifying which side the Player object will be assigned to. PLAYER_TYPE is a unique string identifying which `Player` class is to be used. PARAMS is a list of parameters which is specific to the type of player being added. Any `Player_` sub-class in SparCraft can be defined in the settings file, for example:
 
 {{{
 Player 0 AlphaBeta 40 20 ScriptFirst Playout NOKDPS NOKDPS Alternate None
@@ -20,7 +22,7 @@ Player 1 NOKDPS
 Player 1 AttackClosest
 }}} 
 
-Exact syntax for each type of player is as follows:
+You can add multiple `Player` specifications to each side in the settings file. This will result in the all players from side 0 competing against all players from side 1 in sequence, creating a matrix of results. Exact syntax for each type of player is as follows:
 
 {{{
 #  ,---------------------------------------------------------,
@@ -59,10 +61,78 @@ Exact syntax for each type of player is as follows:
 
 If you are not familiar with what the search player settings mean, then you should probably use the examples I listed above, as they are good settings that we have found through experimentation.
 
+A full list of supported `Player` strings is as follows:
+
+{{{
+// scripted players
+AttackClosest
+AttackDPS
+AttackWeakest
+Cluster
+Kiter
+KiterDPS
+NOKDPS
+Random
+
+// search-based players
+PortfolioGreedySearch
+AlphaBeta
+UCT
+}}}
+
 = State Specification =
 
-To run a simulation you need to specify at least one initial game state
+Now that the players are specified, we can tell the simulation which initial states will be used. Specifically, these parameters will define how the initial `GameState` class is constructed which will be passed into the `Game` to be played. There are 3 categories of states that can be specified by the game settings file: *StateDescriptionFile*, *SymmetricState*, and *SeparatedState*. States are specified as follows:
 
+{{{
+State STATE_TYPE NUM_STATES PARAMS
+}}}
+
+Where STATE_TYPE is one of the listed types above, NUM_STATES is how many of that state is to be used, and PARAMS is additional parameters.
+
+*StateDescriptionFile* states are exactly what they sound like, states which are defined by an external file which lists all initial Units and their properties. The format for specifying this in the settings file is:
+
+{{{
+State StateDescriptionFile NUM_STATES FILE_NAME
+}}}
+
+Where FILE_NAME is the file which contains the state description. These description files have the following format, specifying the initial conditions for each Unit in the state, one unit per line:
+
+{{{
+UNIT_TYPE PLAYERID POSX POSY
+}}}
+
+Where UNIT_TYPE is a valid BWAPI::UnitType class with any spaces in the name replaced with underscores. PLAYERID is 0 or 1, corresponding to which side the unit belongs to. (POSX, POSY) are integer values corresponding to the initial placement of the unit on the map. An example of such a file is:
+
+{{{
+Protoss_Dragoon 0 100 100
+Terran_Marine 1 200 200
+Terran_Vulture 1 220 220
+}}}
+
+Which specifies a Protoss Dragoon fighting against a Terran Marine and a Terran Vulture at the specified locations.
+
+*SymmetricState* states, unlike StateDescriptionFile states are automatically generated states based on a list of parameters. Unit types are specified and given to both players at randomly symmetric positions centered about a given point on the map with the given bounds. The syntax is as follows:
+
+{{{
+State StateSymmetric NUM_STATES MaxX MaxY [UnitType UnitNum]+
+}}}
+
+Where MaxX, MaxY specicy the X and Y side lengths of a bounding box in which the random position is to be generated. Followed by this is 1 or more specifications of UnitType, the type of unit to be added and UnitNum, the number of that unit to be added. Each of these will be given a randomly symmetric position for each player. An example is:
+
+{{{
+State StateSymmetric 10 128 128 Protoss_Dragoon 16 Protoss_Zealot 16
+}}}
+
+This will generate 10 different randomly symmetric states with each player receiving 16 Dragoons and 16 Zealots within a 128x128 bounding box of the center of the map. For each unit given to player 0 at position MID + (rx, ry) the same unit is given to player 1 at position MID + (-rx,-ry).
+
+*SeparatedState* states are similar to SymmetricStates, however instead of all units being centered about a given point, two midpoints are specified and each player's unit is placed randomly symmetrically about his own given point. This can be used to fairly generate states in which each player's force is initially separated from the other player's force, which is typically how StarCraft battles are started. The syntax is:
+
+{{{
+State SeparatedState NumStates MaxX MaxY cx0 cy0 cx1 cy1 [UnitType UnitNum]+
+}}}
+
+Where this time, player center points are specified by (cx0, cy0) and (cx1, cy1).
 
 = Player Type Specification=
 
