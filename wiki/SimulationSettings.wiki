@@ -328,7 +328,9 @@ The Experiments Results Raw file contains the results of each experiment battle,
   * CurrentHP - The remaining HP of the unit
   * XPos, YPod - Final Position of the unit
 
-Unit properties are listed in that order for each remaining unit
+Unit properties are listed in that order for each remaining unit.
+
+The Experiments Results Summary file contains a matrix of size P1*P2 with each entry (i,j) representing the total score between player one using player i and player 2 using player j, where score = wins + draws/2
 
 = Map File =
 
