@@ -1,0 +1,10 @@
+# How to use SparCraft as a standalone Windows exe
+
+It is quite easy to use SparCraft as library for creating standalone Windows executables. 
+
+= Prerequisites =
+
+To compile SparCraft as a standalone Windows exe, you must have the following:
+
+  * [http://www.microsoft.com/visualstudio/11/en-us Visual Studio 2012] (any version)
+  * [http://www.boost.org/ BOOST 1.47.0] (or higher)
