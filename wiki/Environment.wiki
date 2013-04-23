@@ -1,6 +1,10 @@
 #summary Set up windows environment variables
 
-= Required Libraries =
+= Required Run-time Libraries =
+
+If you get an error when running the SparCraft binary, then you forgot about the required run-time .dll files. These are available in a separate download in the downloads page. Simply extract them to the same folder as `SparCraft.exe`, or to your `windows/system32` directory.
+
+= Required Compilation Libraries =
 
 SparCraft contains an OpenGL visualization application for dynamically viewing combat battles as they occur. You can choose to compile SparCraft with or without the visualization option. Visualization is great for testing new AI and debugging, but is not necessary for things like performing simulations within an existing StarCraft bot.
 
