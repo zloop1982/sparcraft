@@ -9,7 +9,7 @@ If you get a .dll error when running the SparCraft binary, then you forgot about
 SparCraft contains an OpenGL visualization application for dynamically viewing combat battles as they occur. You can choose to compile SparCraft with or without the visualization option. Visualization is great for testing new AI and debugging, but is not necessary for things like performing simulations within an existing StarCraft bot.
 
 Required for SparCraft logic only:
-  * [https://code.google.com/p/bwapi/ BWAPI] - BroodWar API
+  * [https://code.google.com/p/bwapi/ BWAPI] - BroodWar API OR [bwapidata bwapidata]
   * [http://www.boost.org/ BOOST] - Boost C++ Libraries
 
 Required for SparCraft + Visualization:
