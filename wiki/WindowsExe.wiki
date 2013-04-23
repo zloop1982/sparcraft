@@ -25,7 +25,7 @@ To build `SparCraft.lib`:
   * Set BWAPI_DIR environment variable to bwapidata folder
   * Launch Visual Studio 2012
   * Open `SparCraft/VisualStudio/SparCraft.sln`
-  * Switch all 3 projects to v110 Platform Toolset
+  * Switch all 3 projects to v110 Platform Toolset (optional if you have v90 support in VS2012)
   * Build bwapi project (creates `BWAPI.lib`)
   * Build SparCraft project (creates `SparCraft.lib`)
 
