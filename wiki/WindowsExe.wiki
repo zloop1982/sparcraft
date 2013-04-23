@@ -4,7 +4,7 @@ It is quite easy to use SparCraft as library for creating standalone Windows exe
 
 = Linking =
 
-To simply link `SparCraft.lib` to your existing project, download the appropriate platform toolset version from the downloads section.
+To link `SparCraft.lib` to your existing project, simply download the appropriate platform toolset version from the downloads section.
 
 = Compiling - Prerequisites =
 
