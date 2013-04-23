@@ -7,17 +7,18 @@ SparCraft was built with speed in mind, and uses a system of frame fast-forwardi
 SparCraft is abstract in the sense that it does not perfectly model all aspects of StarCraft. Since no StarCraft source code is available, all combat logic is our best guess at what is happening in the game engine.
 
 SparCraft currently contains the following functionality:
+  * Accurately models all unit size, weapon, armor and damage types
+  * Accurately models all unit upgrades and research types
+  * Accurately models unit speeds, attack cooldowns and animation frame timings
+  * Can extract map files straight from StarCraft for use in simulation
 
-Accurately models all unit size, weapon, armor and damage types
-Accurately models all unit upgrades and research types
-Accurately models unit speeds, attack cooldowns and animation frame timings
-Can extract map files straight from StarCraft for use in simulation
 SparCraft does not yet contain the following functionality:
+  * Fog of War
+  * Unit Collisions
+  * Spell-Casting or Splash Damage
+  * Non-Deterministic Aspects (such as random hit chance)
+  * Vision Up Ramps
+  * Unit turning or acceleration
 
-Fog of War
-Unit Collisions
-Spell-Casting or Splash Damage
-Non-Deterministic Aspects (such as random hit chance)
-Vision Up Ramps
-Unit turning or acceleration
+
 Despite these features not yet being included, SparCraft simulations demonstrate a high level of accuracy with what happens in an actual StarCraft battle. The accuracy of these simulations however diminishes as battle sizes increase, due to the lack of unit collision functionality.
