@@ -6,6 +6,14 @@ It is quite easy to use SparCraft as library for creating standalone Windows exe
 
 To link `SparCraft.lib` to your existing project, simply download the appropriate platform toolset version from the downloads section.
 
+= Headers =
+
+To use SparCraft, you must include its headers. Make sure your project includes the `SparCraft/source` directory, and from within your program use the following:
+
+{{{
+#include "SparCraft.h"
+}}}
+
 = Compiling - Prerequisites =
 
 To compile SparCraft as a standalone Windows exe, you must have the following:
