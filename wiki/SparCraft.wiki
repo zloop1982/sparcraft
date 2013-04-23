@@ -1,5 +1,7 @@
 #summary SparCraft project description
 
+= Overview =
+
 SparCraft is an open source abstract StarCraft combat simulation package for Windows and Linux. It can be used to create standalone combat simulations or be imported into an existing BWAPI-based StarCraft bot to provide additional AI functionality.
 
 SparCraft was built with speed in mind, and uses a system of frame fast-forwarding to bypass game frames during which no combat decisions are being made (ie: during attack cooldowns, movements, etc). Using this system, SparCraft can easily perform tens of millions of unit actions per second.
@@ -20,5 +22,8 @@ SparCraft does not yet contain the following functionality:
   * Vision Up Ramps
   * Unit turning or acceleration
 
-
 Despite these features not yet being included, SparCraft simulations demonstrate a high level of accuracy with what happens in an actual StarCraft battle. The accuracy of these simulations however diminishes as battle sizes increase, due to the lack of unit collision functionality.
+
+= Artificial Intelligence =
+
+SparCraft allows for the easy creation and implementation of AI combat logic for controlling unit behaviours.
