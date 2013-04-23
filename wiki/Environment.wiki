@@ -5,14 +5,14 @@
 SparCraft contains an OpenGL visualization application for dynamically viewing combat battles as they occur. You can choose to compile SparCraft with or without the visualization option. Visualization is great for testing new AI and debugging, but is not necessary for things like performing simulations within an existing StarCraft bot.
 
 Required for SparCraft logic only:
-  * BWAPI - BroodWar API
-  * BOOST - Boost C++ Libraries
+  * [https://code.google.com/p/bwapi/ BWAPI] - BroodWar API
+  * [http://www.boost.org/ BOOST] - Boost C++ Libraries
 
 Required for SparCraft + Visualization:
-  * OpenGL
-  * SDL
-  * SDL_IMAGE
-  * SDL_GFX
+  * [http://www.opengl.org/ OpenGL]
+  * [http://www.libsdl.org/ SDL]
+  * [http://www.libsdl.org/projects/SDL_image/ SDL_IMAGE]
+  * [http://www.ferzkopp.net/joomla/content/view/19/14/ SDL_GFX]
 
 Visualization is enabled by default, but to turn off its functionality simply comment out the following line in Common.h:
 
