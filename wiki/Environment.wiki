@@ -1,4 +1,4 @@
-#summary Set up windows environment variables
+#summary Required Libraries & Windows Environment Variables
 
 = Required Run-time Libraries =
 
