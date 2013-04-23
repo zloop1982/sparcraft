@@ -11,7 +11,7 @@ To link `SparCraft.lib` to your existing project, simply download the appropriat
 To use SparCraft, you must include its headers. Make sure your project includes the `SparCraft/source` directory, and from within your program use the following:
 
 {{{
-#include SparCraft.h"
+#include "SparCraft.h"
 }}}
 
 = Compiling - Prerequisites =
