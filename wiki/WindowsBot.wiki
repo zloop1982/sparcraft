@@ -1,0 +1,41 @@
+#summary How to use SparCraft in your BWAPI bot
+
+It is quite easy to use SparCraft in your own bot! You can simply link it to your existing bot, or you can compile it yourself.
+
+= Linking =
+
+To link `SparCraft.lib` to your existing project, simply download the appropriate platform toolset version from the downloads section.
+
+= Headers =
+
+To use SparCraft, you must include its headers. Make sure your project includes the `SparCraft/source` directory, and from within your program use the following:
+
+{{{
+#include SparCraft.h"
+}}}
+
+= Compiling - Prerequisites =
+
+To compile SparCraft as a standalone Windows exe, you must have the following:
+
+  * [http://www.microsoft.com/visualstudio/11/en-us Visual Studio 2012] (any version)
+  * BWAPI 3.7.4
+  * [Environment Required Compilation Libraries]
+
+Compiling SparCraft for use in a BWAPI bot requires the full BWAPI library, you cannot link to the included [bwapidata bwapidata] project.
+
+= Compiling - Platform Toolset Settings =
+
+To use SparCraft in a BWAPI bot, it must be compiled under the v90 platform toolset. This is the default toolset for SparCraft so no modification is required. Make sure to click do not upgrade when opening the solution in VS2012 for the first time.
+
+= Compiling - Step By Step Instructions =
+
+To build `SparCraft.lib`:
+  * Install Visual Studio 2012
+  * [Environment Install Windows Libraries + Environment Variables]
+  * Set BWAPI_DIR environment variable to bwapidata folder
+  * Launch Visual Studio 2012
+  * Open `SparCraft/VisualStudio/SparCraft.sln`
+  * Click "Do Not Upgrade" projects
+  * Build `SparCraft` project (creates `SparCraft.lib`)
+  * Build your bot while linking to `SparCraft.lib`
