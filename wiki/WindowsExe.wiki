@@ -7,7 +7,6 @@ It is quite easy to use SparCraft as library for creating standalone Windows exe
 To compile SparCraft as a standalone Windows exe, you must have the following:
 
   * [http://www.microsoft.com/visualstudio/11/en-us Visual Studio 2012] (any version)
-  * [http://www.boost.org/ BOOST 1.47.0] (or higher)
   * [Environment Required Compilation Libraries]
 
 SparCraft uses the BWAPI library to obtain StarCraft data. As a convenience, SparCraft include a stripped-down version of BWAPI called bwapidata which contains only the data necessary for SparCraft to function as a standalone exe. If you do not have BWAPI installed, you can use bwapidata in its place.
