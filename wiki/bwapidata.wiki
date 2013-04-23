@@ -1,0 +1,9 @@
+#summary bwapidata library
+
+= bwapidata =
+
+As BWAPI is quite large, relies on the v90 platform toolset, and not all of its functionality is required to run SparCraft, we have included bwapidata as a stripped-down version of BWAPI which includes all required unit and weapon information to run SparCraft.
+
+The Linux version of SparCraft is currently only possible via bwapidata, as is the v110 Windows version of SparCraft. However, bwapidata cannot be used in place of BWAPI if using SparCraft within a functional BWAPI bot.
+
+Whether you are using bwapidata or BWAPI, make sure to correctly set your [Environment BWAPI_DIR windows environment variable] to point to the one you wish to use.
