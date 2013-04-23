@@ -1,4 +1,4 @@
-# How to use SparCraft as a standalone Windows exe
+#WindowsExe How to use SparCraft as a standalone Windows exe
 
 It is quite easy to use SparCraft as library for creating standalone Windows executables. 
 
