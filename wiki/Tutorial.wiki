@@ -1,3 +1,5 @@
+#summary Quick tutorial with sample code
+
 = Tutorial =
 
 The following sample code is a mini-tutorial on how to use the SparCraft library
