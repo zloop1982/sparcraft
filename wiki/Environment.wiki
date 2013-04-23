@@ -1,8 +1,30 @@
 #summary Set up windows environment variables
 
+= Required Libraries =
+
+SparCraft contains an OpenGL visualization application for dynamically viewing combat battles as they occur. You can choose to compile SparCraft with or without the visualization option. Visualization is great for testing new AI and debugging, but is not necessary for things like performing simulations within an existing StarCraft bot.
+
+Required for SparCraft logic only:
+  * BWAPI - BroodWar API
+  * BOOST - Boost C++ Libraries
+
+Required for SparCraft + Visualization:
+  * OpenGL
+  * SDL
+  * SDL_IMAGE
+  * SDL_GFX
+
+Visualization is enabled by default, but to turn off its functionality simply comment out the following line in Common.h:
+
+{{{
+#define USING_VISUALIZATION_LIBRARIES
+}}}
+
+SparCraft includes a .zip file of required .dll files for running on Windows, however you must download the library include files on your own for compilation.
+
 = Windows Environment Variables =
 
-To make compilation easier for everyone, SparCraft uses Windows Environment Variables to point to various include and library directories.
+To make compilation easier for everyone, SparCraft uses Windows Environment Variables to point to various include and library directories. Those marked (Visualization) are only required if you want to enable visualization.
 
 http://webdocs.cs.ualberta.ca/~cdavid/starcraftaicomp/project.jpg
 
