@@ -2,7 +2,11 @@
 
 It is quite easy to use SparCraft as library for creating standalone Windows executables. 
 
-= Prerequisites =
+= Linking =
+
+To simply link `SparCraft.lib` to your existing project, download the appropriate platform toolset version from the downloads section.
+
+= Compiling - Prerequisites =
 
 To compile SparCraft as a standalone Windows exe, you must have the following:
 
@@ -11,13 +15,13 @@ To compile SparCraft as a standalone Windows exe, you must have the following:
 
 SparCraft uses the BWAPI library to obtain StarCraft data. As a convenience, SparCraft include a stripped-down version of BWAPI called bwapidata which contains only the data necessary for SparCraft to function as a standalone exe. If you do not have BWAPI installed, you can use bwapidata in its place.
 
-= Platform Toolset Settings =
+= Compiling - Platform Toolset Settings =
 
 An annoying part of any Visual Studio project is the platform toolset. By default, SparCraft is set to use the v90 (Visual Studio 2008) platform toolset, so that it is compatible with BWAPI 3.7.4 and all related bots. The v90 toolset requires installing Visual Studio 2008, since VS2012 does not include v90 out of the box. If you have v90 compatibility already set up, then you can compile right away, however you will not have access to any C++11 functionality, which is unavailable in v90.
 
 The good news is, I have included with SparCraft a stripped down version of BWAPI called [bwapidata bwapidata] which does NOT rely on the v90 toolset. You can simply switch all SparCraft projects to the v110 toolset and compile them as-is with no problems, with access to C++11 features. However, remember that the v110 version of SparCraft is NOT compatible with BWAPI-based bots.
 
-= Step By Step Instructions =
+= Compiling - Step By Step Instructions =
 
 To build `SparCraft.lib`:
   * Install Visual Studio 2012
