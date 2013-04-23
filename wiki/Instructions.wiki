@@ -13,7 +13,6 @@ SparCraft is a library which is designed to be able to be run as part of a stand
 
 For compilation instructions, please select one of the following:
 
-* [Windows - Part of BWAPI StarCraft Bot WindowsBot]
-* [Windows - Standalone Executable WindowsExe]
-* [Linux - Standalone Executable Linux]
-
+  * [Windows - Part of BWAPI StarCraft Bot WindowsBot]
+  * [Windows - Standalone Executable WindowsExe]
+  * [Linux - Standalone Executable Linux]
