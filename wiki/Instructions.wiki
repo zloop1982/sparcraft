@@ -16,3 +16,7 @@ For compilation instructions, please select one of the following:
   * [WindowsBot Windows - Part of BWAPI StarCraft Bot]
   * [WindowsExe Windows - Standalone Executable]
   * [Linux Linux - Standalone Executable]
+
+= Linking SparCraft =
+
+If you choose to not compile SparCraft, you can simply link `SparCraft.lib` which is available in the downloads section
