@@ -5,7 +5,7 @@ SparCraft works in Linux!
 = Instructions =
   * Install the [Environment required libraries]
   * Change directory to the SparCraft root directory
-  * Run the following command to compile:
+  * Run the following command to compile (someone please give me a Makefile!):
 {{{
 g++ -O3 source/*.cpp bwapidata/include/*.cpp source/glfont/*.cc -Ibwapidata/include -Isource/glfont -o SparCraft `sdl-config --cflags --libs` -lGL -lGLU -lSDL_image
 }}}
