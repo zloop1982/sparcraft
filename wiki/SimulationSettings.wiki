@@ -339,3 +339,15 @@ MapFile FILENAME
 }}}
 
 File specifying a [Map Map] to be used for the experiment. If no map is used, a default one will be created of size 1280*720 pixels with all tiles walkable. This is to create an 'arena' setting where units cannot run away indefinitely.
+
+= Display =
+
+Syntax:
+
+{{{
+Display BOOL PATH_TO\starcraft_images\
+}}}
+
+If the boolean is set to true, an OpenGL visualization will be launched which visualizes the battle in real time at up to ~1000fps (1ms average draw time). Note that this option is only relevant if visualization libraries are enabled in Common.h
+
+`PATH_TO\starcraft_images\` is the path to the StarCraft sprite .png files available in the downloads section. Please only use these images if you own the retail version of StarCraft, as they are copyrighted by Blizzard Entertainment.
