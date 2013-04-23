@@ -33,7 +33,7 @@ To make compilation easier for everyone, SparCraft uses Windows Environment Vari
 http://webdocs.cs.ualberta.ca/~cdavid/starcraftaicomp/project.jpg
 
 List of Required Windows System Environment Variables:
-  * BWAPI_DIR - BWAPI root directory
+  * BWAPI_DIR - BWAPI or [bwapidata bwapidata] root directory, whichever you choose to use
   * BOOST_DIR - BOOST root directory
   * SDL_DIR - [http://www.libsdl.org/ SDL] root directory (Visualization)
   * SDL_IMAGE_DIR - [http://www.libsdl.org/projects/SDL_image/ SDL_IMAGE] root directory (Visualization)
