@@ -1,6 +1,6 @@
-#summary How to compile and run SparCraft under linux
+#summary How to compile and run SparCraft under Linux
 
-SparCraft works in Linux via the [bwapidata bwapidata] library.
+SparCraft works in Linux via the [bwapidata bwapidata] library!
 
 = Instructions =
   * Install the [Environment required libraries]
