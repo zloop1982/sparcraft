@@ -22,8 +22,7 @@ The good news is, I have included with SparCraft a stripped down version of BWAP
 
 To build `SparCraft.lib`:
   * Install Visual Studio 2012
-  * Install Boost Libraries
-  * [Environment Setup Windows Environment Variables]
+  * [Environment Install Windows Libraries + Environment Variables]
   * Set BWAPI_DIR environment variable to bwapidata folder
   * Launch Visual Studio 2012
   * Open SparCraft/VisualStudio/SparCraft.sln
