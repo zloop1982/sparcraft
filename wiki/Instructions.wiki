@@ -9,7 +9,7 @@ To download the SparCraft source code, do one of the following:
 
 = Compiling SparCraft =
 
-SparCraft is a library which is designed to be able to be run as part of a standalone executable for performing combat experiments, or as part of a BWAPI StarCraft bot. 
+SparCraft is a library which is designed to be able to be run as part of a standalone executable for performing combat experiments, or as part of a BWAPI StarCraft bot. For Windows, any version of Visual Studio can be used to compile SparCraft, but I will only be actively maintaining Visual Studio 2012 project files, you will have to make your own project files if you wish to use any other version of Visual Studio.
 
 For compilation instructions, please select one of the following:
 
