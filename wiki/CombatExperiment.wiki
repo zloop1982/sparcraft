@@ -18,7 +18,7 @@ Unfortunately I am not including binaries for Linux, however compiling the exper
 
 = How To Run Experiments =
 
-To run the experiments, open up a terminal and run the SparCraft executable with the experiment settings file as the only command-line argument. Or in Windows, you can simply drag the experiment file onto SparCraft.exe
+To run the experiments, open up a terminal and run the SparCraft executable with the experiment settings file as the only command-line argument. Or in Windows, you can simply drag the experiment file onto SparCraft.exe, however if there are any errors, you need to run in the terminal to see them.
 
 = Experiment Settings File =
 
