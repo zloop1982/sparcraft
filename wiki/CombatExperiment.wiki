@@ -2,4 +2,16 @@
 
 = Combat Simulation Experiments =
 
-You want StarCraft combat data, but you don't want to code, compile, link, all that boring stuff. No problem! In the downloads section you will find `SparCraft Windows Exe` which is a compiled Windows executable which will allow you to run your own simultation experiments [SimulationSettings via a configuration file.]
+You want StarCraft combat data, but you don't want to code, compile, link, all that boring stuff. No problem! In the downloads section you will find `SparCraft Windows Exe` which is a compiled Windows executable which will allow you to run your own simultation experiments [SimulationSettings via a configuration file.] If you do want to compile this for some reason, it is included in the SparCraft source as the `SparCraft_main` Visual Studio project.
+
+= Linux Compiling =
+
+Unfortunately I am not including binaries for Linux, however compiling the experiments program is one simple command! Check the [Linux Linux] section for details on how to compile.
+
+= How To Run Experiments =
+
+To run the experiments, open up a terminal and run the SparCraft executable with the experiment settings file as the only command-line argument.
+
+= Experiment Settings File =
+
+For details on how to configure your experiments, check the [SimulationSettings Simulation Settings configuration file tutorial]
