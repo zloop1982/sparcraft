@@ -7,3 +7,4 @@ Thank you to the following people who helped with SparCraft
   * Sterling Orsten - Original coder of `WeaponProperties`, `UnitProperties` classes for original UAlbertaBot
   * Graham Erickson - Testing SparCraft for a course project
   * Blizzard Entertainment - For continuing to let us work on StarCraft for academic purposes
+  * BWAPI Developers - Without them it wouldn't be possible
