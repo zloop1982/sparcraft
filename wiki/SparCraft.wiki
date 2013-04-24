@@ -15,7 +15,7 @@ SparCraft currently contains the following functionality:
   * Can extract map files straight from StarCraft for use in simulation
 
 SparCraft Unit Movements
-  * While SparCraft supports arbitrary pixel-precision movements, `GameState::generateMoves()` only generates UP, DOWN, LEFT, RIGHT movements of a fixed length. This abstraction is to give the search algorithms a reasonable number of actions to search over
+  * While SparCraft supports arbitrary pixel-precision movements, `GameState::generateMoves()` only generates UP, DOWN, LEFT, RIGHT movements of a fixed length. This abstraction is to give the search algorithms a reasonable number of actions to search over. This means the standalone version of SparCraft only supports 4-directional movement, but if you edit the code yourself you can implement arbitrary movements.
 
 SparCraft does not yet contain the following functionality:
   * *Unit Collisions* - This is by design. Unit collisions are expensive, the point of the system is to be fast
