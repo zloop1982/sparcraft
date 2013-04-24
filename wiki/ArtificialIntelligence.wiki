@@ -31,6 +31,10 @@ The algorithm is implemented in `SparCraft/source/AlphaBetaSearch.cpp`
 
 UCT is another popular tree search algorithm, and we have modified it for use with RTS combat. It is available in `SparCraft/source/UCTSearch.cpp`
 
+A paper detailing this UCT implementation is currently submitted to CIG2013 and will be posted here if accepted.
+
 = Portfolio Greedy Search =
 
 Our newest greedy search technique which loses to AB/UCT at small combat sizes, but easily defeats them at larger sizes. It is implemented in `SparCraft/source/PortfolioGreedySearch.cpp`
+
+A paper detailing this greedy search implementation is currently submitted to CIG2013 and will be posted here if accepted.
