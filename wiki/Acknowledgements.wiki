@@ -4,5 +4,5 @@
 
 Thank you to the following people who helped with SparCraft
   * Michael Buro - My Phd Supervisor
-  * Sterling Orsten - Original Coder of `WeaponProperties`, `UnitProperties` classes for original UAlbertaBot
+  * Sterling Orsten - Original coder of `WeaponProperties`, `UnitProperties` classes for original UAlbertaBot
   * Graham Erickson - Testing SparCraft for a course project
