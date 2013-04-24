@@ -14,6 +14,9 @@ SparCraft currently contains the following functionality:
   * Accurately models unit speeds, attack cooldowns and animation frame timings
   * Can extract map files straight from StarCraft for use in simulation
 
+SparCraft Unit Movements
+  * While SparCraft supports arbitrary pixel-precision movements, GameState::generateMoves() only generates UP, DOWN, LEFT, RIGHT movements of a fixed length. This abstraction is to give the search algorithms a reasonable number of actions to search over
+
 SparCraft does not yet contain the following functionality:
   * Fog of War
   * Unit Collisions
