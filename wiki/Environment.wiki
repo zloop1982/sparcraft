@@ -40,6 +40,8 @@ List of Required Windows System Environment Variables:
   * SDL_GFX_DIR - [http://www.ferzkopp.net/joomla/content/view/19/14/ SDL_GFX] root directory (Visualization)
   * EXTERNAL_LIB_DIR - External Libraries (Visualization)
 
+Note: You can set EXTERNAL_LIB_DIR to `PATH_TO/SparCraft/external_binaries/lib`
+
 SparCraft comes with a Windows .bat file located in `SparCraft/VisualStudio/set_environment_variables.bat` which you can edit and run to set these variables for you. 
 
 Alternatively, you can edit these in Windows 7 right click "My Computer" > Properties > Advanced System Settings > Environment Variables:
