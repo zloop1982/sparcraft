@@ -6,7 +6,7 @@ You want StarCraft combat data, but you don't want to code, compile, link, all t
 
 = Windows Standalone Executable =
 
-In the downloads section you will find `SparCraft_windows_exe` which is a compiled Windows executable which will allow you to run your own simultation experiments [SimulationSettings via a configuration file.] If you do want to compile this for some reason, it is included in the SparCraft source as the `SparCraft_main` Visual Studio project.
+In the downloads section you will find `SparCraft_windows_exe.zip` which is a compiled Windows executable which will allow you to run your own simultation experiments [SimulationSettings via a configuration file.] If you do want to compile this for some reason, it is included in the SparCraft source as the `SparCraft_main` Visual Studio project.
 
 http://webdocs.cs.ualberta.ca/~cdavid/starcraftaicomp/sparcraft.png
 
