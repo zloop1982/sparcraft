@@ -241,6 +241,8 @@ UCT
 
 = State Specification =
 
+Note: By default, SparCraft has a maximum of 50 units per state per player. This can be changed in `Common.h`
+
 Now that the players are specified, we can tell the simulation which initial states will be used. Specifically, these parameters will define how the initial `GameState` class is constructed which will be passed into the `Game` to be played. There are 3 categories of states that can be specified by the game settings file: *StateDescriptionFile*, *SymmetricState*, and *SeparatedState*. States are specified as follows:
 
 {{{
