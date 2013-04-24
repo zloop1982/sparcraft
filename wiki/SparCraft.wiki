@@ -11,7 +11,7 @@ SparCraft is abstract in the sense that it does not perfectly model all aspects 
 SparCraft currently contains the following functionality:
   * Accurately models all unit size, weapon, armor and damage types
   * Accurately models all unit upgrades and research types
-  * Accurately models unit speeds, attack cooldowns and animation frame timings
+  * Accurately models unit speeds, [https://docs.google.com/spreadsheet/ccc?key=0An3xUNEy2rixdGtleHI4Y2FqUU1wNUthY05leVY2X1E#gid=0 attack cooldowns and animation frame timings]
   * Can extract map files straight from StarCraft for use in simulation
 
 SparCraft Unit Movements
