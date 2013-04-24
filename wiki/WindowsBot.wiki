@@ -6,10 +6,6 @@ If you want to learn more about integrating AI systems into BWAPI bots, you can 
 
   * [https://skatgame.net/mburo/ps/aiide12ws-search.pdf Incorporating Search Algorithms into RTS Game Agents]
 
-= Linking =
-
-To link `SparCraft.lib` to your existing project, simply download the appropriate platform toolset version from the downloads section.
-
 = Headers =
 
 To use SparCraft, you must include its headers. Make sure your project includes the `SparCraft/source` directory, and from within your program use the following:
