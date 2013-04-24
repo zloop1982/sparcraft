@@ -8,6 +8,8 @@ You want StarCraft combat data, but you don't want to code, compile, link, all t
 
 In the downloads section you will find `SparCraft_windows_exe.zip` which is a compiled Windows executable which will allow you to run your own simultation experiments [SimulationSettings via a configuration file.] If you do want to compile this for some reason, it is included in the SparCraft source as the `SparCraft_main` Visual Studio project.
 
+The only requirement is the [http://www.microsoft.com/visualstudio/11/en-us/downloads/vc-redist#vc-redist Visual C++ Redistributable for Visual Studio 2012]
+
 http://webdocs.cs.ualberta.ca/~cdavid/starcraftaicomp/sparcraft.png
 
 = Linux Compiling =
