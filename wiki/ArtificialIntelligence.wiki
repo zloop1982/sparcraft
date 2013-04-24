@@ -6,6 +6,21 @@ One of the main reasons for the release of this project was so that there could 
 
 Not only is SparCraft a full simulation system, but it also includes several AI algorithms we have developed for RTS combat.
 
+= Scripted Players =
+
+Many static scripted players come with SparCraft, they are:
+
+{{{
+AttackClosest
+AttackDPS
+AttackWeakest
+Cluster
+Kiter
+KiterDPS
+NOKDPS
+Random
+}}}
+
 = Alpha Beta =
 
 We have developed a version of Alpha Beta tree search called Alpha Beta Considering Durations (ABCD). This algorithm was introduced in the following 2012 AIIDE paper: [https://skatgame.net/mburo/ps/aiide12-combat.pdf Fast Heuristic Search for RTS Game Combat Scenarios].
