@@ -8,4 +8,4 @@ SparCraft implements all unit action decisions via the Player class. Player is a
 void Player::getMoves(GameState & state, const MoveArray & moves, std::vector<UnitAction> & moveVec);
 }}}
 
-`getMoves` takes as input a GameState, a MoveArray (an array of all possible moves for this player from this state), and a vector of UnitActions. `getMoves` will then perform combat logic to populate the vector with UnitActions to be performed by that player at that state.
+When you implement a Player derived class, the `getMoves` function will contain all of your combat decision logic. Here is how you will use it:
