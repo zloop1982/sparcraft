@@ -1,0 +1,10 @@
+#summary StarCraft related academic publications
+
+= Publications =
+
+Here are my StarCraft-related academic publications
+  * [https://skatgame.net/mburo/ps/aiide11-bo.pdf Build-Order Optimization in StarCraft] AIIDE 2011
+  * [https://skatgame.net/mburo/ps/aiide12-combat.pdf Fast Heuristic Search for RTS Game Combat Scenarios] AIIDE 2012
+  * [https://skatgame.net/mburo/ps/aiide12ws-search.pdf Incorporating Search Algorithms into RTS Game Agents]
+
+[http://scholar.google.ca/citations?user=teRseTgAAAAJ&hl=en Click here for a complete list of my publications]
