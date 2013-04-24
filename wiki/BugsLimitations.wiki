@@ -1,0 +1,7 @@
+#summary Current Bugs & Limitations
+
+= SparCraft Limitations =
+
+  * Air-Only (Corsair, Valkyrie) units are not currently allowed due to possible deadlocks
+  * Spell Casters are not implemented
+  * Fog of War not implemented, but you could simulate it yourself by limiting knowledge of units artificially
