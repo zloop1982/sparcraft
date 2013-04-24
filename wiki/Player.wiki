@@ -35,7 +35,7 @@ if (canMove == Players::Player_One || canMove == Players::Player_Both)
 }
 }}}
 
-The UnitAction vector will then contain one UnitAction per Unit which can move in the current state. 
+The UnitAction vector will then contain one UnitAction per Unit which can move in the current state. You then simply pass Player objects into a Game object to have it play a simulation until one sided wins. You can check how to do this in the Tutorial.
 
 = Making Your Own Player =
 
