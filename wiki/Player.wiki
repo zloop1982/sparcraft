@@ -1,0 +1,11 @@
+#summary Description of the Player class
+
+= Player =
+
+SparCraft implements all unit action decisions via the Player class. Player is an abstract class which contains the `getMoves` function:
+
+{{{
+void Player::getMoves(GameState & state, const MoveArray & moves, std::vector<UnitAction> & moveVec);
+}}}
+
+`getMoves` takes as input a GameState, a MoveArray (an array of all possible moves for this player from this state), and a vector of UnitActions. `getMoves` will then perform combat logic to populate the vector with UnitActions to be performed by that player at that state.
