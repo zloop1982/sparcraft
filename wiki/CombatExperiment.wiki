@@ -1,0 +1,5 @@
+#summary How to use the Combat Experiment program
+
+= Combat Simulation Experiments =
+
+You want StarCraft combat data, but you don't want to code, compile, link, all that boring stuff. No problem! In the downloads section you will find `SparCraft Windows Exe` which is a compiled Windows executable which will allow you to run your own simultation experiments [SimulationSettings via a configuration file.]
