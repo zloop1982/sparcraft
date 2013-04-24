@@ -36,6 +36,7 @@ To build `SparCraft.lib`:
   * Set BWAPI_DIR environment variable to bwapidata folder
   * Launch Visual Studio 2012
   * Open `SparCraft/VisualStudio/SparCraft.sln`
-  * Click "Do Not Upgrade" projects
+  * Click "Do Not Upgrade" projects (this keeps them as v90)
+  * Change Configuration to `Release` (if it isn't already)
   * Build `SparCraft` project (creates `SparCraft.lib`)
   * Build your bot while linking to `SparCraft.lib`
