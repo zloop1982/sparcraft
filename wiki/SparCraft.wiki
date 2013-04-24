@@ -23,7 +23,3 @@ SparCraft does not yet contain the following functionality:
   * Unit turning or acceleration
 
 Despite these features not yet being included, SparCraft simulations demonstrate a high level of accuracy with what happens in an actual StarCraft battle. The accuracy of these simulations however diminishes as battle sizes increase, due to the lack of unit collision functionality.
-
-= Artificial Intelligence =
-
-SparCraft allows for the easy creation and implementation of AI combat logic for controlling unit behaviours.
