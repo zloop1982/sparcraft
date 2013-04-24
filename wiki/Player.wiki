@@ -9,3 +9,34 @@ void Player::getMoves(GameState & state, const MoveArray & moves, std::vector<Un
 }}}
 
 When you implement a Player derived class, the `getMoves` function will contain all of your combat decision logic. Here is how you will use it:
+
+{{{
+// Get an initial state you want to find moves for
+GameState initialState = getSomeState();
+
+// Let's say we want to use AttackClosest as player 1
+Player * p = new Player_AttackClosest(Players::Player_One);
+
+// Check to make sure that Player One can move right now in the state
+IDType canMove = initialState.whoCanMove();
+if (canMove == Players::Player_One || canMove == Players::Player_Both)
+{
+    // Construct a blank vector of UnitActions, which getMoves will populate
+    std::vector<UnitAction> move;
+
+    // Construct a MoveArray. This structure will hold all the legal moves for each unit possible for this state
+    MoveArray moveArray;
+
+    // Generate the moves possible by our player from state into moveArray
+    state.generateMoves(moveArray, currentPlayerID);
+
+    // Call getMoves to populate the vector with actions
+    p->getMoves(state, moveArray, move);
+}
+}}}
+
+The UnitAction vector will then contain one UnitAction per Unit which can move in the current state. 
+
+= Making Your Own Player =
+
+Since `getMoves` will be passed in a list of legal moves for each unit, writing your own Player is as simple as selecting one of the legal moves for each unit and sticking it in the vector. How complicated that decision is is up to you. I suggest looking at `SparCraft/source/Player_AttackClosest.cpp` for the simplest sample player.
