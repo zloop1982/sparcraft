@@ -364,4 +364,4 @@ If the boolean is set to true, an OpenGL visualization will be launched which vi
 
 Using the visualizer does not affect results of your experiments in any way, as frames are drawn between Player decision episodes. However they will probably slow down the experiment a little as they do add about 1ms per frame to draw.
 
-`PATH_TO\starcraft_images\` is the path to the StarCraft sprite .png files available in the downloads section. Please only use these images if you own the retail version of StarCraft, as they are copyrighted by Blizzard Entertainment.
+`PATH_TO\starcraft_images\` is the path to the StarCraft sprite .png files available in `SparCraft/starcraft_images`. Please only use these images if you own the retail version of StarCraft, as they are copyrighted by Blizzard Entertainment.
