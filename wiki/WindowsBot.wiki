@@ -2,7 +2,8 @@
 
 It is quite easy to use SparCraft in your own bot! You can simply link it to your existing bot, or you can compile it yourself.
 
-If you want to learn more about integrating AI systems into BWAPI bots, you can read our AIIDE 2012 paper: [https://skatgame.net/mburo/ps/aiide12ws-search.pdf Incorporating Search Algorithms into RTS Game Agents]
+If you want to learn more about integrating AI systems into BWAPI bots, you can read our AIIDE 2012 paper: 
+[https://skatgame.net/mburo/ps/aiide12ws-search.pdf Incorporating Search Algorithms into RTS Game Agents]
 
 = Linking =
 
