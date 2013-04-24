@@ -1,0 +1,8 @@
+#summary Thanks to those who helped
+
+= Acknowledgements =
+
+Thank you to the following people who helped with SparCraft
+  * Michael Buro - My Phd Supervisor
+  * Sterling Orsten - Original Coder of WeaponProperties, UnitProperties lasses for original UAlbertaBot
+  * Graham Erickson - Testing SparCraft for a course project
