@@ -20,7 +20,8 @@ SparCraft Unit Movements
 SparCraft does not yet contain the following functionality:
   * Fog of War
   * Unit Collisions
-  * Spell-Casting or Splash Damage
+  * Spell-Casting or Splash Damage (Muta 1-hit only)
+  * No Burrowing or Cloaking / Detection
   * Non-Deterministic Aspects (such as random hit chance)
   * Vision Up Ramps
   * Unit turning or acceleration
